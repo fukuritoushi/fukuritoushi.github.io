@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -42,6 +41,10 @@
       font-size: 1.8rem;
       margin-bottom: 1rem;
     }
+    .hero iframe {
+      border: none;
+      border-radius: 4px;
+    }
     .section {
       padding: 2rem;
       max-width: 1000px;
@@ -59,6 +62,7 @@
       border-radius: 8px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
       width: 300px;
+      text-align: center;
     }
     .card img {
       width: 100%;
@@ -66,7 +70,14 @@
       border-radius: 4px;
     }
     .card h3 {
-      margin-top: 0.5rem;
+      margin: 0.75rem 0 0.5rem;
+      font-size: 1.2rem;
+      color: #333;
+    }
+    .card p {
+      margin: 0;
+      font-size: 1rem;
+      color: #666;
     }
     footer {
       background: #333;
@@ -75,23 +86,30 @@
       padding: 1rem;
       margin-top: 2rem;
     }
+    footer a {
+      color: #ffd700;
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>短くわかる投資</h1>
   </header>
+
   <nav>
     <a href="#">ホーム</a>
     <a href="#">記事一覧</a>
     <a href="#">YouTube</a>
     <a href="#">プロフィール</a>
   </nav>
+
   <section class="hero">
     <h2>ようこそ！もこにゃんが教える投資の世界へ</h2>
     <p>初心者向けに、やさしく、短く、わかりやすく！</p>
-    <iframe width="320" height="180" src="https://www.youtube.com/embed/" frameborder="0" allowfullscreen></iframe>
+    <iframe width="320" height="180" src="https://www.youtube.com/embed/あなたの動画ID" allowfullscreen></iframe>
   </section>
+
   <section class="section">
     <h2>最新の記事</h2>
     <div class="cards">
@@ -110,15 +128,25 @@
         <h3>つみたてNISA入門</h3>
         <p>今さら聞けない基礎をサクッと！</p>
       </div>
+      <!-- ここから追加 -->
+      <div class="card">
+        <a href="toushi-misconceptions.html" style="text-decoration: none; color: inherit;">
+          <img src="https://via.placeholder.com/300x180" alt="投資の誤解5選！記事画像">
+          <h3>投資の誤解5選！初心者がやりがちな落とし穴</h3>
+          <p>「投資＝ギャンブル」じゃない！誤解をサクッと解消！</p>
+        </a>
+      </div>
+      <!-- ここまで追加 -->
     </div>
   </section>
+
   <section class="section">
     <h2>もこにゃんについて</h2>
     <p>投資初心者に寄り添う、やさしいナビキャラ「もこにゃん」が、あなたの資産形成をサポート！</p>
   </section>
+
   <footer>
-    <p>&copy; 2025 短くわかる投資 | <a href="#" style="color:#ffd700;">Xアカウント</a></p>
+    <p>&copy; 2025 短くわかる投資 | <a href="#">Xアカウント</a></p>
   </footer>
-  <a href="toushi-misconceptions.html">投資の誤解5選！初心者がやりがちな落とし穴</a>
 </body>
 </html>
